@@ -1,3 +1,4 @@
+
 body { 
 font-family: 'helvetica', sans-serif;
 font-size: 15px;
@@ -5,17 +6,19 @@ line-height: 1,5;
 padding:0;
 margin: 0;
 }
+
 /*Global */
-.container{
+.container {
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
 
-ul{
-	margin:0;
-	padding:0;
+ul {
+	margin: 0;
+	padding: 0;
 }
+
 .button_1 {
 	height: 38px;
 	background:#455e4f;
@@ -28,9 +31,47 @@ ul{
 .dark {
 	padding:15px;
 	background: #f4f4f4;
-	color: #5d8f77
+	color: #5d8f77;
 	margin-top:10px;
 	margin-bottom:10px;
+}
+
+/* VIDEO */
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(backpicture.jpg) no-repeat;
+    background-size: cover; 
+}
+
+#welcome{
+	font-family: helvetica, sans-serif;
+	color:#fff;
+}
+
+#smallspace {
+	text-decoration-line: none;
+	font-family: helvetica, sans-serif;
+	font-size: 40px;
+	color:#fff;
+	display: inline;
+
+}
+
+.landing {
+	margin: 0 auto;
+	justify-content: center;
+	text-align: center;
 }
 
 /* Header **/
@@ -144,7 +185,7 @@ color:#ffffff;
 	margin-top: 10px;
 }
 
-
+h1
 aside #sidebar .getinspo input, aside#sidebar .getinspo textarea{
 	width: 90%;
 	padding: 5px;
@@ -215,7 +256,14 @@ footer {
 
 }
 
-
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(backpicture.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
 
 
 
